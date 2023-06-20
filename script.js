@@ -31,11 +31,15 @@ document.getElementById('region-list').addEventListener('click', function(even){
     const regionName = even.target.innerText;
     console.log(regionName);
     loadCoutrys(regionName);
-    // const regionCountry = document.getElementById('regionAfrica');
-    // const regionAfrica = regionCountry.innerText;
-    // console.log(regionAfrica);
-    // loadCoutrys(regionAfrica);
+
+
+    // display present country name
+    const displayCountry = document.getElementById('display-country');
+    console.log(displayCountry);
+    displayCountry.innerText = regionName;
+
     
 })
+
 
 loadCoutrys('Asia');
