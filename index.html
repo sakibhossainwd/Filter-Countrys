@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body class="w-75 m-auto">
+    <h1 class="text-bg-primary text-center p-5 mt-5 display-3 fw-semibold rounded-3">Filter Country</h1>
+<!-- dropdown menu ber start -->
+    <div class="dropdown-menu-bar mt-5 d-flex gap-5 justify-content-between">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle fs-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Filter Country By Region
+            </button>
+            <ul id="region-list" class="dropdown-menu fs-3">
+                <!-- Asia, Africa, North America, South America, Antarctica, Europe, and Australia. -->
+              <li><a id="regionAsia" class="dropdown-item" href="#">Asia</a></li>
+              <li><a id="regionAfrica" class="dropdown-item" href="#">Africa</a></li>
+              <li><a class="dropdown-item" href="#">Europe</a></li>
+              <li><a class="dropdown-item" href="#">North America</a></li>
+              <li><a class="dropdown-item" href="#">South America</a></li>
+            </ul>
+          </div>
+    </div>
+
+<!-- All coutrys part -->
+    <main>
+        <section class="mt-5">
+                <div id="country-container" class="row row-cols-1 row-cols-md-3 g-4">
+                    
+                  </div>
+        </section>
+    </main>
+
+
+
+
+    <!-- script file -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
